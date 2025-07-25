@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftLink - About Us</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-blue-50 text-blue-900 min-h-screen flex flex-col items-center py-10">
+    <!-- Main Content Container -->
+    <div class="container mx-auto max-w-3xl bg-white shadow-lg rounded-xl p-8 md:p-12 border border-blue-100">
+        <h1 class="text-4xl font-extrabold mb-8 text-blue-700 text-center">About SwiftLink</h1>
+
+        <p class="mb-6 leading-relaxed text-gray-700">
+            Welcome to <span class="font-semibold text-blue-800">SwiftLink</span> – your go-to solution for quick and efficient digital linking! We provide a simple, powerful, and privacy-focused platform to transform your long URLs into neat, shareable short links and to instantly generate QR codes for any data you need.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4 text-blue-600">Our Mission</h2>
+        <p class="mb-6 leading-relaxed text-gray-700">
+            Our mission at SwiftLink is to streamline your digital interactions. In a world full of complex links and the need for quick information access, we aim to offer a seamless experience for anyone looking to simplify sharing. Whether it's for business, personal use, or creative projects, we make connectivity effortless.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4 text-blue-600">What We Offer</h2>
+        <ul class="list-disc ml-6 mb-6 space-y-2 text-gray-700">
+            <li><span class="font-semibold">Intuitive URL Shortening:</span> Turn cumbersome links into concise, easy-to-manage short URLs. Perfect for social media, presentations, or anywhere space is limited.</li>
+            <li><span class="font-semibold">Dynamic QR Code Generation:</span> Create scannable QR codes for websites, text, contact information, Wi-Fi details, and more. Customize and download your codes in seconds.</li>
+            <li><span class="font-semibold">Privacy-Focused Approach:</span> We prioritize your privacy. SwiftLink operates primarily client-side (in your browser), meaning we don't store your personal data or the content you shorten or generate unless absolutely necessary for the immediate function of the service.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold mb-4 text-blue-600">Built for Simplicity and Accessibility</h2>
+        <p class="mb-6 leading-relaxed text-gray-700">
+            SwiftLink is proudly hosted on <a href="https://pages.github.com/" class="text-blue-700 hover:underline" target="_blank">GitHub Pages</a>, reflecting our commitment to open, accessible web tools. Our design philosophy centers around a clean user interface and straightforward functionality, ensuring that anyone can use our services without hassle.
+        </p>
+
+        <p class="mb-6 leading-relaxed text-gray-700">
+            Thank you for choosing SwiftLink. We're constantly working to improve and expand our offerings to meet your digital needs!
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4 text-blue-600">Contact Us</h2>
+        <p class="mb-6 leading-relaxed text-gray-700">
+            Have questions or feedback? We'd love to hear from you! Please create an issue on our GitHub repository: <a href="https://github.com/your-github-username/swiftlink/issues" class="text-blue-700 hover:underline">github.com/your-github-username/swiftlink/issues</a>.
+            <br><span class="text-sm text-gray-500">(Remember to replace 'your-github-username' with your actual GitHub username and 'swiftlink' with your repository name.)</span>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-10 text-gray-600 text-sm text-center">
+        &copy; <span id="current-year-about"></span> SwiftLink. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('current-year-about').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
